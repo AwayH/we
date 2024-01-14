@@ -1,0 +1,122 @@
+.base {
+    /* background-color: #eee; */
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.base-container {
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.base-body {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.base-head, .base-foot {
+    text-align: center;
+}
+
+.base-title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 10px;
+}
+
+.base-btn {
+    border: solid 2px #cf7688;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #cf7688;
+    transition-duration: .3s;
+}
+
+.base-btn:hover {
+    background-color: #f6cdd5;
+}
+
+/* service -------------------------------- */
+
+.service-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    width: 33.33333%;
+    border: solid 1px #e6e6e6;
+    box-sizing: border-box;
+    padding: 1.5rem 2rem;
+    margin-right: -1px;
+    margin-bottom: -1px;
+    color: rgba(0, 0, 0, .5 );
+}
+
+.service-title {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.service-desc {
+    font-size: .95rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.service-icons {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.service-icons .fa-solid {
+    color: #cf7688;
+}
+
+/* project --------------------------- */
+
+.base-project {
+    background-image: linear-gradient(#f6f6f6, #fff);
+}
+
+.project-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    width: 20%;
+    /* border: solid 1px #000; */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.project-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* intro ------------------------------------------ */
+
+.base-intro {
+    background-image: url("../images/intro-bg.jpg");
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.base-intro::before {
+    content: "";
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* z-index: -1; */
+}
