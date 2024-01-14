@@ -32,6 +32,7 @@
     text-decoration: none;
     color: #cf7688;
     transition-duration: .3s;
+    display: inline-block;
 }
 
 .base-btn:hover {
@@ -107,6 +108,7 @@
     background-size: cover;
     position: relative;
     background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 10%, 100% 85%, 0 100%);
 }
 
 .base-intro::before {
@@ -118,5 +120,44 @@
     position: absolute;
     top: 0;
     left: 0;
-    /* z-index: -1; */
+    z-index: -1;
+}
+
+.base-intro .base-title-small, .base-intro .base-title-primary {
+    display: block;
+}
+
+.base-intro .base-title-small {
+    color: #ddd;
+    font-size: 2.5rem;
+}
+
+.base-intro .base-title-primary {
+    color: #fff;
+    font-size: 3.5rem;
+    margin-top: .5rem;
+}
+
+.base-intro .base-head, .base-intro .base-foot {
+    text-align: left;
+}
+
+.base-intro .base-title {
+    letter-spacing: 0;
+}
+
+.intro-desc {
+    color: #fff;
+    line-height: 1.7rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.base-intro .base-btn {
+    color: #fff;
+    border-color: #fff;
+}
+
+.base-intro .base-btn:hover {
+    background-color: rgba(255, 255, 255, .2);
 }
