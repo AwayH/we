@@ -80,3 +80,28 @@
 .process-item:hover .process-head {
     background-color: #cf7688;
 }
+
+/* RWD ----------------------- */
+
+@media screen and (max-width: 480px) {
+    .process-item, .process-ol {
+        flex-direction: column;
+    }
+
+    .process-head, .process-body, .process-li {
+        width: auto;
+    }
+
+    .process-head {
+        padding: 1rem;
+    }
+
+    .process-name {
+        text-align: center;
+    }
+
+    .process-li {
+        padding: 0;
+        margin: 1rem;
+    }
+}
