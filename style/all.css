@@ -318,13 +318,15 @@ img {
 
 /* RWD -------------------------------------------- */
 @media screen and (max-width: 480px) {
+
+    /* header ------------ */
     .header {
         background-color: rgba(255, 255, 255, .7);
         box-shadow: 0 5px 5px rgba(0, 0, 0, .05);
     }
 
     .header-body {
-        /* display: none; */
+        display: none;
     }
 
     .header-foot, .header-btn-xmark {
@@ -375,5 +377,91 @@ img {
         top: .75rem;
         right: 1.3rem;
         color: #666;
+    }
+
+    /* banner -------------------- */
+
+    .banner {
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+    }
+
+    .banner-container {
+        flex-direction: column;
+    }
+
+    .banner-index .banner-head, .banner-index .banner-body,
+    .banner-head, .banner-body {
+        width: 100%;
+    }
+
+    .banner-index .banner-head, .banner-head {
+        padding-top: 5rem;
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+
+    .banner-body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .banner-title-line::after {
+        left: 50%;
+        margin-left: -1.5rem;
+    }
+
+    .banner-index .banner-body {
+        padding-top: 1rem;
+    }
+
+    .banner-title {
+        font-size: 7vw;
+    }
+
+    .banner-small {
+        font-size: 5vw;
+    }
+
+    .banner-ul {
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .banner-img-mobile {
+        width: 40vw;
+        bottom: 2.5rem;
+    }
+
+    .banner-img-desktop {
+        width: 70vw;
+        margin-left: 10vw;
+    }
+
+    .banner-img-pad {
+        width: 60vw;
+    }
+
+    /* aside ---------------- */
+
+    .aside {
+        display: none;
+    }
+
+    /* footer ----------------------- */
+
+    .footer {
+        clip-path: none;
+        padding-top: 1rem;
+    }
+
+    .footer-head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer-body {
+        display: none;
     }
 }
