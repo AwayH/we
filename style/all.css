@@ -12,6 +12,17 @@ body {
     font-family: Arial, Helvetica, "微軟正黑體", sans-serif;
 }
 
+/* helper -------------------------------------- */
+.container {
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* header ---------------------------------------- */
 
 .header {
@@ -21,7 +32,9 @@ body {
     align-items: center;
 }
 
-.header-head, .header-body, .header-foot {
+.header-head,
+.header-body,
+.header-foot {
     padding: .5rem 1rem;
     box-sizing: border-box;
 }
@@ -31,7 +44,8 @@ body {
     width: 80px;
 }
 
-.header-foot, .header-btn-times {
+.header-foot,
+.header-btn-times {
     display: none;
 }
 
