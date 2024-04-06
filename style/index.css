@@ -81,3 +81,25 @@
 .service-icons .fas {
     color: #cf7688;
 }
+
+/* project ---------------------------------------- */
+
+.base-project {
+    background-image: linear-gradient(#f6f6f6 0, #fff 50%);
+}
+
+.project-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    width: 20%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.project-img {
+    max-width: 100%;
+    height: auto;
+}
