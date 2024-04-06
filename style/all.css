@@ -130,6 +130,19 @@ body {
     margin-bottom: 2rem;
 }
 
+.banner-title-line {
+    position: relative;
+}
+
+.banner-title-line::after {
+    content: "";
+    border-top: solid 4px rgba(255, 255, 255, .5);
+    width: 1.5em;
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+}
+
 .banner-small {
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -162,6 +175,15 @@ body {
 
 .banner-desc {
     line-height: 1.6;
+}
+
+.banner-desc + .banner-desc {
+    margin-top: 1rem;
+}
+
+.banner-desc-lg {
+    font-size: 1.5rem;
+    line-height: 1.3;
 }
 
 .banner-btns {
@@ -205,6 +227,11 @@ body {
 
 .banner-img-desktop {
     margin-left: 4.5rem;
+}
+
+.banner-img-fit {
+    height: 400px;
+    object-fit: cover;
 }
 
 /* footer ---------------------------- */
