@@ -221,26 +221,15 @@ body {
     position: absolute;
 }
 
-.banner-img-mobile,
-.banner-img-pad,
-.banner-img-desktop {
-    animation-name: downToUp;
-    animation-duration: .5s;
-    animation-fill-mode: forwards;
-    transform: translateY(120%);
-}
-
 .banner-img-mobile {
     left: 0;
     bottom: 5rem;
     z-index: 1;
-    animation-delay: .6s;
 }
 
 .banner-img-pad {
     bottom: -2rem;
     right: 1rem;
-    animation-delay: .3s;
 }
 
 .banner-img-desktop {
@@ -252,12 +241,67 @@ body {
     object-fit: cover;
 }
 
-@keyframes downToUp {
+.ani-move-downToUp {
+    animation-name: moveDownToUp;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    transform: translateY(120%);
+}
+
+.ani-fadeIn-leftToRight {
+    animation-name: fadeInLeftToRight;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.ani-delay-1 {
+    animation-delay: .3s;
+}
+
+.ani-delay-2 {
+    animation-delay: .6s;
+}
+
+.ani-delay-3 {
+    animation-delay: .9s;
+}
+
+.ani-delay-4 {
+    animation-delay: 1s;
+}
+
+.ani-delay-5 {
+    animation-delay: 1.2s;
+}
+
+.ani-delay-6 {
+    animation-delay: 1.3s;
+}
+
+.ani-delay-7 {
+    animation-delay: 1.4s;
+}
+
+@keyframes moveDownToUp {
     from {
         transform: translateY(120%);
     }
     to {
         transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeftToRight {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateX(0);
+        opacity: 1;
     }
 }
 
