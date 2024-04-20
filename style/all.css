@@ -408,6 +408,11 @@ body {
         font-size: 7vw;
     }
 
+    .banner-title-line::after {
+        left: 50%;
+        margin-left: -1.5rem;
+    }
+
     .banner-small {
         font-size: 5vw;
     }

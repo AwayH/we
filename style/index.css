@@ -272,7 +272,7 @@
 }
 
 @keyframes fadeInLeftToRight {
-    to{
+    to {
         transform: translateX(0);
         opacity: 1;
     }
