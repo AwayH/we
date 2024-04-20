@@ -221,14 +221,26 @@ body {
     position: absolute;
 }
 
+.banner-img-mobile,
+.banner-img-pad,
+.banner-img-desktop {
+    animation-name: downToUp;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    transform: translateY(120%);
+}
+
 .banner-img-mobile {
     left: 0;
     bottom: 5rem;
+    z-index: 1;
+    animation-delay: .6s;
 }
 
 .banner-img-pad {
     bottom: -2rem;
     right: 1rem;
+    animation-delay: .3s;
 }
 
 .banner-img-desktop {
@@ -238,6 +250,15 @@ body {
 .banner-img-fit {
     height: 400px;
     object-fit: cover;
+}
+
+@keyframes downToUp {
+    from {
+        transform: translateY(120%);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
 /* footer ---------------------------- */
