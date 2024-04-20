@@ -303,3 +303,35 @@ body {
 .aside-link-top:hover {
     color: rgba(0, 0, 0, .5);
 }
+
+/* RWD ---------------------------------- */
+
+@media screen and (max-width: 480px){
+    .header {
+        background-color: rgba(255, 255, 255, .7);
+        box-shadow: 0 5px 5px rgba(0, 0, 0, .05);
+    }
+
+    .header-body {
+        display: none;
+    }
+
+    .header-foot {
+        display: block;
+    }
+
+    .header-img-logo {
+        opacity: .5;
+    }
+
+    .header-btn {
+        padding: 0;
+        font-size: 2rem;
+        border: none;
+        background-color: transparent;
+    }
+
+    .header-btn-bars {
+        color: rgba(0, 0, 0, .5);
+    }
+}
