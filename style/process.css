@@ -8,7 +8,7 @@
     background-color: #cf7688;
 }
 
-.process-item + .process-item {
+.process-item+.process-item {
     margin-top: 2rem;
 }
 
@@ -84,26 +84,29 @@
 
 /* RWD --------------- */
 
-.process-item,
-.process-ol {
-    flex-direction: column;
-}
+@media screen and (max-width: 480px) {
 
-.process-head,
-.process-body,
-.process-li {
-    width: auto;
-}
+    .process-item,
+    .process-ol {
+        flex-direction: column;
+    }
 
-.process-head {
-    padding: 1rem;
-}
+    .process-head,
+    .process-body,
+    .process-li {
+        width: auto;
+    }
 
-.process-li {
-    padding: 0;
-    margin: 1rem;
-}
+    .process-head {
+        padding: 1rem;
+    }
 
-.process-name {
-    text-align: center;
+    .process-li {
+        padding: 0;
+        margin: 1rem;
+    }
+
+    .process-name {
+        text-align: center;
+    }
 }
