@@ -305,6 +305,12 @@ body {
     color: rgba(0, 0, 0, .5);
 }
 
+/* addClass -------------------------- */
+
+.we-no-scroll {
+    overflow: hidden;
+}
+
 /* RWD ---------------------------------- */
 
 @media screen and (max-width: 480px){
